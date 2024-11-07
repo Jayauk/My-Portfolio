@@ -1,0 +1,181 @@
+/* General Reset and Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Global Settings */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF; /* Text Color */
+    line-height: 1.6;
+    background-color: #2C2C2C; /* Dark Gray Background */
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Header Section with Gradient Background */
+header {
+    background: linear-gradient(135deg, #00897B, #FFD54F); /* Gradient from Teal to Gold */
+    color: #FFFFFF; /* White Text */
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for header */
+    border-bottom: 2px solid #FFD54F;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Section Styling with Padding and Margin */
+section {
+    padding: 3rem 2rem;
+    max-width: 900px;
+    margin: 4rem auto;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #FFD54F;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #FFD54F;
+    padding-bottom: 0.5rem;
+}
+
+/* Skills Section */
+#skills ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#skills ul li {
+    background: #E0F2F1; /* Light Teal Background */
+    padding: 1.5rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    color: #2C2C2C; /* Dark Gray Text */
+    text-align: center;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skills ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Hover effect with shadow */
+}
+
+/* Projects Section */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project {
+    background: #E0F2F1;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    color: #2C2C2C;
+}
+
+.project p {
+    margin-bottom: 1rem;
+    color: #2C2C2C;
+}
+
+.project a {
+    color: #00897B; /* Teal Links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #FFD54F; /* Gold Hover Color */
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Hover effect for projects */
+}
+
+/* Contact Section with Gradient and Padding */
+#contact {
+    background: linear-gradient(135deg, #00897B, #FFD54F);
+    padding: 3rem;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+#contact a {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #FFD54F; /* Hover effect on contact links */
+}
+
+/* Footer Section with Teal Background */
+footer {
+    background-color: #00897B; /* Teal Background */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    border-top: 2px solid #FFD54F;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
+
+/* Responsive Styles for Mobile Devices */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 2rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #skills ul li {
+        font-size: 1rem;
+    }
+
+    .project {
+        padding: 1.5rem;
+    }
+}
